@@ -19,7 +19,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  sqflite: ^2.0.0+3
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -28,7 +27,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  sqflite: ^2.0.0+3
 
 
 # For information on the generic Dart part of this file, see the
@@ -46,6 +45,15 @@ flutter:
     - assets/images/
     - imagens/banner 1.png
     - imagens/banner 2.png
+    - imagens/bebida 1.png
+    - imagens/bebida 2.png
+    - imagens/bebida 3.png
+    - imagens/bebida 4.png
+
+
+
+
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

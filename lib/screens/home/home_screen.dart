@@ -6,7 +6,7 @@ import 'package:lifepet_app/DataList.dart';
 import 'dart:core';
 import 'package:lifepet_app/detail.dart';
 
-import 'components/client_card.dart';
+import 'components/pet_card.dart';
 
 class HomeScreen extends StatelessWidget {
   PetService service = PetService();
@@ -27,31 +27,134 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
-    body: Center(
-      child: Column(
-      children: <Widget>[
-        GestureDetector(
-          onTap: () {}, // handle your image tap here
-          child: Image.asset(
-            'imagens/banner 1.png',
-            fit: BoxFit.cover, // this is the solution for border
-          ),
-        ),
-       Spacer(),
 
-        GestureDetector(
-          onTap: () {}, // handle your image tap here
-          child: Image.asset(
-            'imagens/banner 2.png',
-            fit: BoxFit.cover, // this is the solution for border
+    body:DefaultTextStyle(
+      style: Theme.of(context).textTheme.bodyText2,
+      child: LayoutBuilder(
+    builder: (BuildContext context, BoxConstraints viewportConstraints){
+      return Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              GestureDetector(
+                onTap: () {}, // handle your image tap here
+                child: Image.asset(
+                  'imagens/banner 1.png',
+                  fit: BoxFit.cover, // this is the solution for border
+                ),
+              ),
+
+
+
+              GestureDetector(
+                onTap: () {}, // handle your image tap here
+                child: Image.asset(
+                  'imagens/banner 2.png',
+                  fit: BoxFit.cover, // this is the solution for border
+                ),
+              ),
+
+              Spacer(),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 20.0),
+                height: 180.0,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Container(
+                      width: 100.0,
+                      child: Image.asset('imagens/bebida 1.png', fit: BoxFit.cover,),
+                      color: Colors.white60,
+                    ),
+                    Spacer(),
+                    Container(
+                      width: 100.0,
+                      child: Image.asset('imagens/bebida 1.png', fit: BoxFit.cover,),
+                      color: Colors.blue,
+                    ),
+                    Spacer(),
+                    Container(
+                      width: 100.0,
+                      child: Image.asset('imagens/bebida 1.png', fit: BoxFit.cover,),
+                      color: Colors.green,
+                    ),
+                    Spacer(),
+                    Container(
+                      width: 100.0,
+                      child: Image.asset('imagens/bebida 1.png', fit: BoxFit.cover,),
+                      color: Colors.yellow,
+                    ),
+                    Spacer(),
+                    Container(
+                      width: 100.0,
+                      child: Image.asset('imagens/bebida 1.png', fit: BoxFit.cover,),
+                      color: Colors.orange,
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(vertical: 20.0),
+                height: 180.0,
+                child: ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    Container(
+                      width: 100.0,
+                      child: Image.asset('imagens/bebida 1.png', fit: BoxFit.cover,),
+                      color: Colors.red,
+                    ),
+                    Spacer(),
+                    Container(
+                      width: 100.0,
+                      child: Image.asset('imagens/bebida 1.png', fit: BoxFit.cover,),
+                      color: Colors.blue,
+                    ),
+                    Spacer(),
+                    Container(
+                      width: 100.0,
+                      child: Image.asset('imagens/bebida 1.png', fit: BoxFit.cover,),
+                      color: Colors.green,
+                    ),
+                    Container(
+                      width: 100.0,
+                      child: Image.asset('imagens/bebida 1.png', fit: BoxFit.cover,),
+                      color: Colors.yellow,
+                    ),Spacer(),
+
+                    Container(
+
+                      width: 100.0,
+                      child: Column(
+                        children: <Widget>[
+                          GestureDetector(
+                            child: Image.asset("imagens/bebida 1.png"),
+                            onTap: (){
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => FormCadastroPetScreen()),
+                              );
+                            },
+                          ),
+                          Text("Vodka Absolut"),
+                          Text("90,00"),
+                        ],
+                      ),
+                      color: Colors.orange,
+                    ),
+                    Spacer(),
+
+                  ],
+                ),
+              ),
+            ],
           ),
-        ),
-        
-      ],
+        );
+
+    },
       ),
-
     ),
-
     drawer: Drawer(
       child: ListView(
         padding: EdgeInsets.zero,

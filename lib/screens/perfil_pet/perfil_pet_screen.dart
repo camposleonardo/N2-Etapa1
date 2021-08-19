@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:lifepet_app/models/client_model.dart';
+import 'package:lifepet_app/models/pet_model.dart';
 import 'package:lifepet_app/screens/form_cadastro_pet/form_cadastro_pet_screen.dart';
 import 'package:lifepet_app/screens/components/custom_navbar.dart';
-import 'package:lifepet_app/services/client-service.dart';
+import 'package:lifepet_app/services/pet_service.dart';
 
-import 'components/cartao_info_client.dart';
+import 'components/cartao_info_pet.dart';
 
 class PerfilPetScreen extends StatelessWidget {
 
   final String id;
-  ClientService service = ClientService();
-  Client client;
+  PetService service = PetService();
+  Pet pet;
 
   PerfilPetScreen({this.id}){
     _getPet(id);
