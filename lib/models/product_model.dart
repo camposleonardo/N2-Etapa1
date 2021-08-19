@@ -1,4 +1,4 @@
-import 'package:tabararia1/modelos/client_model.dart';
+import 'package:lifepet_app/models/product_model.dart';
 
 
 class Product{
@@ -15,5 +15,5 @@ class Product{
     this.description,
     this.amount,
     this.id,
-})
+});
 }

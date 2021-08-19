@@ -2,14 +2,14 @@ class Client {
   String name;
   String email;
   String gender;
-  double CPF;
+  double cpf;
   String id;
 
   Client({
     this.name,
     this.email,
     this.gender,
-    this.CPF,
+    this.cpf,
     this.id
   });
 
@@ -18,7 +18,7 @@ class Client {
       'id': id,
       'name': name,
       'email': email,
-      'CPF': CPF,
+      'CPF': cpf,
     };
   }
 }

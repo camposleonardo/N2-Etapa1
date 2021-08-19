@@ -1,12 +1,11 @@
 import 'dart:math';
 
-import 'package:tabararia1/modelos/client_model.dart';
-import 'package:tabararia1/modelos/product_model.dart';
-import 'package:tabararia1/service/client-service.dart';
+import 'package:lifepet_app/services/client-service.dart';
+import 'package:lifepet_app/models/product_model.dart';
 
 class ProductService{
   final List<Product> _productList = [];
-  final ClientService clientService = ClientService;
+  final ClientService clientService = ClientService();
 
   static final ProductService _singleton = ProductService._internal();
 

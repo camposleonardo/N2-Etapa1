@@ -1,14 +1,14 @@
 import 'dart:math';
 
-import 'package:N2-Etapa1/modelos/client_model.dart';
-import 'package:N2-Etapa1/utils/db.util.dart';
+import 'package:lifepet_app/models/client_model.dart';
+import 'package:lifepet_app/utils/db.util.dart';
 
-class PetService {
+class ClientService {
   final List<Client> _clientList = []; //array list passa static final vai pegar os dados do serviço
 
   static final ClientService _singleton = ClientService._internal(); //construção dele
 
-  factory PetService() {
+  factory ClientService() {
     return _singleton;
   }
 
@@ -17,13 +17,13 @@ class PetService {
         name: "João",
         email: 'xuaxuaxuaxua@gmail.com',
         gender: "Masculino",
-        CPF: 77777777777,
+        cpf: 77777777777,
     ));
     _clientList.add(Client(
       name: "Maria",
       email: 'chachachacha@gmail.com',
       gender: "Feminino",
-      CPF: 5478512369,
+      cpf: 5478512369,
     ));
   }
 
@@ -37,7 +37,7 @@ class PetService {
       name: client.name,
       email: client.email,
       gender: client.gender,
-      CPF: client.CPF,
+      cpf: client.cpf,
     );
     DbUtil.insertData('client', newClient.toMap());
   }
@@ -46,12 +46,12 @@ class PetService {
     Client clientEditar = getClient(id);
     clientEditar.name = newClient.name;
     clientEditar.email = newClient.email;
-    clientEditar.CPF = newClient.CPF;
+    clientEditar.cpf = newClient.cpf;
   }
 
   Client getClient(String id) {
-    return _clientList.singleWhere((pet) {
-      return pet.id == id;
+    return _clientList.singleWhere((client) {
+      return client.id == id;
     });
   }
 }

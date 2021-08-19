@@ -6,7 +6,7 @@ import 'package:lifepet_app/DataList.dart';
 import 'dart:core';
 import 'package:lifepet_app/detail.dart';
 
-import 'components/pet_card.dart';
+import 'components/client_card.dart';
 
 class HomeScreen extends StatelessWidget {
   PetService service = PetService();

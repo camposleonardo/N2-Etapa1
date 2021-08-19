@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lifepet_app/models/pet_model.dart';
+import 'package:lifepet_app/models/client_model.dart';
 import 'package:lifepet_app/screens/perfil_pet/perfil_pet_screen.dart';
 
-Widget petCard(BuildContext context, int index, Pet pet) {
+Widget clientCard(BuildContext context, int index, Client client) {
   return GestureDetector(
     onTap: () {
       Navigator.of(context).push(
