@@ -1,7 +1,12 @@
 lifepet_app
 2.1
+<<<<<<< Updated upstream
 file:///C:/Users/Casa/Documents/Codigo%20Beta/
 file:///C:/Users/Casa/Documents/Codigo%20Beta/lib/
+=======
+file:///C:/Users/Casa/Documents/Pets_sqlite/
+file:///C:/Users/Casa/Documents/Pets_sqlite/lib/
+>>>>>>> Stashed changes
 async
 2.12
 file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.6.1/
