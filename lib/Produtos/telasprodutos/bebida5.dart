@@ -53,7 +53,7 @@ class _Bebida5State extends State<Bebida5> {
               ),
             ),
             Text(" Jack Daniels, 1L"),
-            Text("Por: R 59,90 "),
+            Text("Por: R 135,90 "),
             Wrap(
               children: <Widget>[
 

@@ -56,25 +56,15 @@ class HomeScreen extends StatelessWidget {
           builder: (BuildContext context, BoxConstraints viewportConstraints){
             return Container(
               alignment: Alignment.center,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(
-                      'imagens/bebida 6.jpg'),
-                  fit: BoxFit.cover,
-                ),
-                shape: BoxShape.circle,
-              ),
 
               child: Center(
                 child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
                     GestureDetector(
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Detail()),
+                          MaterialPageRoute(builder: (context) => Login()),
                         );
                       }, // handle your image tap here
                       child: Image.asset(
@@ -86,7 +76,7 @@ class HomeScreen extends StatelessWidget {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Detail()),
+                          MaterialPageRoute(builder: (context) => Login()),
                         );
                       }, // handle your image tap here
                       child: Image.asset(
@@ -121,7 +111,7 @@ class HomeScreen extends StatelessWidget {
                                   child: Column(
                                     children: <Widget>[
                                       Text("Pipe Plástico"),
-                                      Text("BRL: 24,90")
+                                      Text("BRL: 49,90")
                                     ],
                                   ),
                                 ),
@@ -148,7 +138,7 @@ class HomeScreen extends StatelessWidget {
                                   child: Column(
                                     children: <Widget>[
                                       Text("Pipe de Metal"),
-                                      Text("BRL: 48,90")
+                                      Text("BRL: 98,90")
                                     ],
                                   ),
                                 ),
@@ -175,7 +165,7 @@ class HomeScreen extends StatelessWidget {
                                   child: Column(
                                     children: <Widget>[
                                       Text("Pipe decorativo"),
-                                      Text("BRL: 32,90")
+                                      Text("BRL: 74,90")
                                     ],
                                   ),
                                 ),
@@ -202,7 +192,7 @@ class HomeScreen extends StatelessWidget {
                                   child: Column(
                                     children: <Widget>[
                                       Text("Caixa de Seda"),
-                                      Text("BRL: 78,80")
+                                      Text("BRL: 129,90")
                                     ],
                                   ),
                                 ),
@@ -229,7 +219,7 @@ class HomeScreen extends StatelessWidget {
                                   child: Column(
                                     children: <Widget>[
                                       Text("Seda Caseira"),
-                                      Text("BRL: 104,90")
+                                      Text("BRL: 129,90")
                                     ],
                                   ),
                                 ),
@@ -268,7 +258,7 @@ class HomeScreen extends StatelessWidget {
                                   child: Column(
                                     children: <Widget>[
                                       Text("Vodka Sky"),
-                                      Text("BRL: 37,90")
+                                      Text("BRL: 74,99")
                                     ],
                                   ),
                                 ),
@@ -296,7 +286,7 @@ class HomeScreen extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: <Widget>[
                                       Text("RedLabel 750Ml"),
-                                      Text("BRL: 59,90")
+                                      Text("BRL: 109,90")
                                     ],
                                   ),
                                 ),
@@ -323,7 +313,7 @@ class HomeScreen extends StatelessWidget {
                                   child: Column(
                                     children: <Widget>[
                                       Text("AbsintoKosten 670Ml"),
-                                      Text("BRL: 60,00")
+                                      Text("BRL: 59,90")
                                     ],
                                   ),
                                 ),
@@ -349,7 +339,7 @@ class HomeScreen extends StatelessWidget {
                                   child: Column(
                                     children: <Widget>[
                                       Text("JackDaniels Apple"),
-                                      Text("135,00")
+                                      Text("135,90")
                                     ],
                                   ),
                                 ),
@@ -376,7 +366,7 @@ class HomeScreen extends StatelessWidget {
                                   child: Column(
                                     children: <Widget>[
                                       Text("Vodka Absolut"),
-                                      Text("90,00")
+                                      Text("74,99")
                                     ],
                                   ),
                                 ),
@@ -460,6 +450,7 @@ class HomeScreen extends StatelessWidget {
                 );
               },
             ),
+            Image.asset("imagens/wpp.png")
           ],
         ),
       ),
